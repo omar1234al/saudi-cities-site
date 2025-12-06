@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>المملكة العربية السعودية ومدنها</title>
+    <style>
+        body {
+            font-family: "Tahoma", sans-serif;
+            margin: 0;
+            background-color: #f5f5f5;
+            color: #000;
+        }
+        header {
+            background-color: #006c35;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #044d25;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        nav button {
+            background-color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .card h2 {
+            margin-top: 0;
+            color: #006c35;
+        }
+        .city-layout {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .city-text {
+            flex: 1 1 250px;
+        }
+        .city-image {
+            flex: 1 1 250px;
+        }
+        .city-image img {
+            width: 100%;
+            border-radius: 6px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #006c35;
+            color: #fff;
+            margin-top: 30px;
+        }
+        @media (max-width: 700px) {
+            .city-layout {
+                flex-direction: column;
+            }
+        }
+
+        /* ثيم داكن */
+        body.dark {
+            background-color: #111;
+            color: #f0f0f0;
+        }
+        body.dark header,
+        body.dark footer {
+            background-color: #022d17;
+        }
+        body.dark .card {
+            background-color: #1c1c1c;
+        }
+        body.dark nav {
+            background-color: #011e11;
+        }
+        body.dark nav a {
+            color: #f0f0f0;
+        }
+        body.dark nav button {
+            background-color: #444;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>المملكة العربية السعودية ومدنها</h1>
+    <p>نبذة عن المملكة وبعض أهم مدنها ومعالمها التاريخية والسياحية</p>
+</header>
+
+<nav>
+    <!-- زر تغيير الوضع سيُضاف بالـ JavaScript لكن ممكن نكتبه من الآن -->
+    <button id="themeToggle">تغيير الوضع</button>
+    <a href="#about-sa">عن السعودية</a>
+    <a href="#riyadh">الرياض</a>
+    <a href="#jeddah">جدة</a>
+    <a href="#mecca">مكة المكرمة</a>
+    <a href="#medina">المدينة المنورة</a>
+    <a href="#dammam">الدمام</a>
+</nav>
+
+<div class="container">
+
+    <!-- عن السعودية -->
+    <section id="about-sa" class="card">
+        <h2>عن المملكة العربية السعودية</h2>
+        <p>
+            تقع المملكة العربية السعودية في قلب شبه الجزيرة العربية وتُعد أكبر دولها مساحة، 
+            وتمتاز بتاريخ عريق يمتد لآلاف السنين، كما تحتضن أقدس مدينتين في الإسلام: مكة المكرمة والمدينة المنورة.[web:1][web:17]
+        </p>
+        <p>
+            تشكلت المملكة الحديثة بعد استعادة الرياض على يد الملك عبدالعزيز بن عبدالرحمن آل سعود 
+            في بدايات القرن العشرين، ثم توحيد معظم مناطق شبه الجزيرة تحت اسم المملكة العربية السعودية عام 1932.[web:17]
+        </p>
+    </section>
+
+    <!-- الرياض -->
+    <section id="riyadh" class="card">
+        <div class="city-layout">
+            <div class="city-text">
+                <h2>الرياض</h2>
+                <p>
+                    الرياض هي عاصمة المملكة وأكبر مدنها، تقع في وسط شبه الجزيرة العربية وتُعد مركزاً سياسياً 
+                    واقتصادياً وثقافياً مهماً.[web:2][web:4]
+                </p>
+                <h3>المعلم: برج المملكة</h3>
+                <p>
+                    يُعد برج المملكة من أبرز معالم الرياض الحديثة، ويتميز بتصميمه المعماري المميز والجسر الزجاجي في أعلاه 
+                    الذي يوفر إطلالة بانورامية على المدينة.[web:11][web:15]
+                </p>
+            </div>
+            <div class="city-image">
+                <img src="https://img.freepik.com/free-photo/riyadh-skyline-saudi-arabia_23-2148829761.jpg" alt="صورة لمدينة الرياض">
+            </div>
+        </div>
+    </section>
+
+    <!-- جدة -->
+    <section id="jeddah" class="card">
+        <div class="city-layout">
+            <div class="city-text">
+                <h2>جدة</h2>
+                <p>
+                    جدة هي بوابة الحرمين على ساحل البحر الأحمر، وتُعد مركزاً تجارياً وسياحياً مهماً 
+                    وتتميز بكورنيشها الممتد ومعالمها البحرية.[web:11][web:19]
+                </p>
+                <h3>المعلم: نافورة الملك فهد</h3>
+                <p>
+                    نافورة الملك فهد في جدة تُعد من أعلى النوافير في العالم، وتقذف الماء إلى ارتفاع كبير 
+                    يشكل مشهداً مميزاً على الواجهة البحرية للمدينة.[web:11][web:19]
+                </p>
+            </div>
+            <div class="city-image">
+                <img src="https://img.freepik.com/free-photo/saudi-arabia-jeddah-fountain_23-2148829758.jpg" alt="صورة نافورة في جدة">
+            </div>
+        </div>
+    </section>
+
+    <!-- مكة المكرمة -->
+    <section id="mecca" class="card">
+        <div class="city-layout">
+            <div class="city-text">
+                <h2>مكة المكرمة</h2>
+                <p>
+                    مكة المكرمة هي أقدس مدينة في الإسلام، تقع غرب المملكة، 
+                    ويقصدها المسلمون من جميع أنحاء العالم لأداء مناسك الحج والعمرة.[web:11][web:14]
+                </p>
+                <h3>المعلم: المسجد الحرام والكعبة</h3>
+                <p>
+                    يحتضن المسجد الحرام الكعبة المشرفة التي تعد قبلة المسلمين وأقدس موقع في العالم الإسلامي، 
+                    وشهد عبر التاريخ توسعات متعددة لاستيعاب أعداد الحجاج والمعتمرين المتزايدة.[web:11][web:14]
+                </p>
+            </div>
+            <div class="city-image">
+                <img src="https://img.freepik.com/free-photo/kaaba-mecca_23-2148829744.jpg" alt="صورة المسجد الحرام في مكة">
+            </div>
+        </div>
+    </section>
+
+    <!-- المدينة المنورة -->
+    <section id="medina" class="card">
+        <div class="city-layout">
+            <div class="city-text">
+                <h2>المدينة المنورة</h2>
+                <p>
+                    المدينة المنورة هي ثاني أقدس مدينة في الإسلام، هاجر إليها النبي محمد صلى الله عليه وسلم 
+                    ومنها انطلقت الدولة الإسلامية في عهد النبوة.[web:11][web:14]
+                </p>
+                <h3>المعلم: المسجد النبوي</h3>
+                <p>
+                    المسجد النبوي من أهم المساجد في العالم الإسلامي، يضم الروضة الشريفة وقبر النبي صلى الله عليه وسلم، 
+                    وشهد توسعات كبيرة عبر العصور حتى أصبح من أكبر المساجد في العالم.[web:11][web:14]
+                </p>
+            </div>
+            <div class="city-image">
+                <img src="https://img.freepik.com/free-photo/prophet-mosque-medina_23-2148829747.jpg" alt="صورة المسجد النبوي في المدينة">
+            </div>
+        </div>
+    </section>
+
+    <!-- الدمام -->
+    <section id="dammam" class="card">
+        <div class="city-layout">
+            <div class="city-text">
+                <h2>الدمام</h2>
+                <p>
+                    الدمام هي عاصمة المنطقة الشرقية، تطل على الخليج العربي وتُعد مركزاً لصناعة النفط 
+                    والتجارة البحرية في المملكة.[web:4][web:10]
+                </p>
+                <h3>المعلم: كورنيش الدمام وجزيرة الملك فهد</h3>
+                <p>
+                    يشتهر كورنيش الدمام بإطلالته البحرية الممتدة ومرافقه الترفيهية، 
+                    كما تعد جزيرة الملك فهد من المعالم البارزة التي يقصدها الزوار للاستمتاع بالمناظر البحرية والحدائق.[web:7][web:18]
+                </p>
+            </div>
+            <div class="city-image">
+                <img src="https://img.freepik.com/free-photo/dammam-saudi-arabia-seaside_23-2148829759.jpg" alt="صورة كورنيش الدمام">
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2025 موقع تعريفي عن المملكة العربية السعودية ومدنها</p>
+</footer>
+
+<script>
+    // عند تحميل الصفحة: قراءة الثيم من localStorage وتطبيقه
+    document.addEventListener("DOMContentLoaded", function () {
+        const savedTheme = localStorage.getItem("theme"); // قراءة من التخزين المحلي[web:41][web:24]
+        if (savedTheme === "dark") {
+            document.body.classList.add("dark");
+        }
+
+        const themeBtn = document.getElementById("themeToggle");
+        // تحديث نص الزر حسب الوضع الحالي
+        function updateBtnText() {
+            if (document.body.classList.contains("dark")) {
+                themeBtn.textContent = "وضع نهاري";
+            } else {
+                themeBtn.textContent = "وضع ليلي";
+            }
+        }
+        updateBtnText();
+
+        // عند الضغط على الزر: تغيير الوضع وحفظه
+        themeBtn.addEventListener("click", function () {
+            document.body.classList.toggle("dark");
+            const isDark = document.body.classList.contains("dark");
+            localStorage.setItem("theme", isDark ? "dark" : "light"); // حفظ في التخزين المحلي[web:24][web:48]
+            updateBtnText();
+        });
+    });
+</script>
+
+</body>
+</html>
